@@ -67,7 +67,7 @@ function addTab(e) {
 }
 
 function openTabs() {
-	if (!localStorage.getItem("default-tabs")) {
+	if (!localStorage.getItem("default-tabs") || !JSON.parse(localStorage.getItem("default-tabs")).length) {
 		alert("set default tabs first!")
 	} else {
 		var tabs = JSON.parse(localStorage.getItem("default-tabs"))
