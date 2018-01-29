@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import '../styles/main.sass'
 import List from './components/List/List.js'
+import DateTimer from './components/DateTimer/DateTimer.js'
 const listsInfo = require('../data/lists.json')
 
 var listsArray = []
@@ -23,7 +24,7 @@ var defaultTabsSection =
 		<div className="open-tabs tabs-button" onClick={openTabs}><i className="material-icons">view_carousel</i></div>
 	</div>
 
-ReactDOM.render(<div className='wrapper'>{listsArray}{defaultTabsSection}</div>, document.getElementById('app'))
+ReactDOM.render(<div><DateTimer /><div className='wrapper'>{listsArray}{defaultTabsSection}</div></div>, document.getElementById('app'))
 
 function setTabs() {
 	var linkButtons = document.querySelectorAll('.list-element-wrapper')

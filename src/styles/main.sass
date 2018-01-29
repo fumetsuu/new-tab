@@ -6,12 +6,39 @@ body
     padding: 0
     background-color: #3f3e3e
     transition: 0.25s ease
+    position: relative
+
+.time-display
+    position: absolute
+    top: -120px
+    left: 0
+    width: 100%
+    text-align: center
+    color: white
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.2)
+    font-size: 4rem
+    font-family: 'Mplus 1p'
+    font-weight: 100
+@media (max-width: 460px)
+    .time-display
+        font-size: 3rem
+
+.date-display
+    position: absolute
+    bottom: 10px
+    right: 10px
+    color: white
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.2)
+    font-size: 2rem
+    font-family: 'Mplus 1p'
+    font-weight: 200
+
 
 .wrapper
     background-color: white
     width: 80%
     height: auto
-    margin: 80px auto
+    margin: 150px auto 80px auto
     display: flex
     flex-wrap: wrap
     justify-content: space-around
