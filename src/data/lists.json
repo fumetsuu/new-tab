@@ -1,0 +1,108 @@
+{
+	"lists": [
+		{
+			"header": "Time Wasting",
+			"headerColour": "#7af0ec",
+			"links": [
+				{
+					"name": "Facebook",
+					"bgColour": "#3A5C97",
+					"link": "https://facebook.com"
+				},
+				{
+					"name": "Messenger",
+					"bgColour": "#17C7F3",
+					"link": "https://messenger.com"
+				},
+				{
+					"name": "YouTube",
+					"bgColour": "#FC0000",
+					"link": "https://youtube.com"
+				},
+				{
+					"name": "Twitter",
+					"bgColour": "#21A5F0",
+					"link": "https://twitter.com"
+				},
+				{
+					"name": "Reddit",
+					"bgColour": "#ff7d1e",
+					"link": "https://reddit.com"
+				}
+			]
+		},
+		{
+			"header": "Programming",
+			"headerColour": "#7af090",
+			"links": [
+				{
+					"name": "Github",
+					"bgColour": "#323131",
+					"link": "https://github.com"
+				},
+				{
+					"name": "MDN",
+					"bgColour": "#28A6DB",
+					"link": "https://developer.mozilla.org/"
+				},
+				{
+					"name": "NPM",
+					"bgColour": "#C93036",
+					"link": "https://www.npmjs.com/"
+				},
+				{
+					"name": "Local Server (Port: 1234)",
+					"bgColour": "#6affd3",
+					"link": "http://127.0.0.1:1234"
+				}
+			]
+		},
+		{
+			"header": "Anime",
+			"headerColour": "#fb7575",
+			"links": [
+				{
+					"name": "MyAnimeList",
+					"bgColour": "#2D55A0",
+					"link": "https://facebook.com"
+				},
+				{
+					"name": "MasterAni.me",
+					"bgColour": "#E2000D",
+					"link": "https://masterani.me"
+				},
+				{
+					"name": "KissAnime",
+					"bgColour": "#88D128",
+					"link": "https://kissanime.ru"
+				},
+				{
+					"name": "Manga",
+					"bgColour": "#f1efea",
+					"link": "https://zip-all.com/"
+				}
+			]
+		},
+		{
+			"header": "Misc.",
+			"headerColour": "#e58af9",
+			"links": [
+				{
+					"name": "Gmail",
+					"bgColour": "#DB473F",
+					"link": "https://gmail.com"
+				},
+				{
+					"name": "Google Drive",
+					"bgColour": "#FFCD54",
+					"link": "https://drive.google.com"
+				},
+				{
+					"name": "OzBargain",
+					"bgColour": "#DF8D47",
+					"link": "https://ozbargain.com.au"
+				}
+			]
+		}
+	]
+}

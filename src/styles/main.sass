@@ -1,0 +1,81 @@
+$grey: #5b5b5b
+
+body
+    height: 100%
+    margin: 0
+    padding: 0
+    background-color: #3f3e3e
+    transition: 0.25s ease
+
+.wrapper
+    background-color: white
+    width: 80%
+    height: auto
+    margin: 80px auto
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    border-radius: 25px
+    position: relative
+
+=gen-list-child
+    width: 100%
+    text-align: center
+    font-size: 12px
+    line-height: 55px
+    height: 55px
+    float: left
+
+.list-container
+    font-family: 'PT Sans'
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 2px
+    word-spacing: 5px
+    width: 240px
+    height: auto
+    margin-bottom: 50px
+    .list-header
+        +gen-list-child
+        line-height: 85px
+        height: 80px
+        margin-bottom: 25px
+        border-bottom: 5px solid
+    .list-element-wrapper
+        +gen-list-child
+        transition: 0.25s
+        text-decoration: none
+        border-radius: 5px
+        margin: 10px 0
+        color: $grey
+        &:hover
+            color: white
+
+.default-tabs-section
+    position: absolute
+    right: 0
+    bottom: 0
+    width: auto
+    height: 60px
+    display: grid
+    grid-template-columns: auto auto
+    grid-template-rows: 100%
+    .edit-tabs
+        background-color: #5d5857
+    .open-tabs
+        background-color: #65e5f4
+    .tabs-button
+        border-radius: 50%
+        width: 40px
+        height: 40px
+        margin: 10px
+        transition: 0.4s
+        .material-icons 
+            font-size: 20px
+            width: 100%
+            text-align: center
+            line-height: 40px
+            color: white
+        &:hover
+            cursor: pointer
+            filter: brightness(0.7)
