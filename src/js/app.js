@@ -28,21 +28,24 @@ ReactDOM.render(<div className='wrapper'>{listsArray}{defaultTabsSection}</div>,
 function setTabs() {
 	var linkButtons = document.querySelectorAll('.list-element-wrapper')
 	if (!editing) {
-		console.log("u may now edit")
-		editing = !editing
+		document.querySelector('.edit-tabs i').innerText = "save"
+		document.querySelector('.edit-tabs').style.backgroundColor = '#6ffc89'
 		for (var i = 0; i < linkButtons.length; i++) {
 			linkButtons[i].addEventListener('click', addTab)
-			if (linkButtons[i].getAttribute("selected") === "true") {
-				linkButtons[i].style.border = '1px solid red'
-				linkButtons[i].setAttribute("selected", "false")
+			if (defaultTabs.includes(linkButtons[i].getAttribute("href"))) {
+				console.log(linkButtons[i])
+				linkButtons[i].style.border = '1px solid grey'
+				linkButtons[i].setAttribute("selected", "true")
 			}
 		}
+		editing = !editing
 	} else {
-		console.log("set default tabs into localstorage")
+		document.querySelector('.edit-tabs i').innerText = "border_color"
+		document.querySelector('.edit-tabs').style.backgroundColor = '#5d5857'
 		editing = !editing
 		for (var i = 0; i < linkButtons.length; i++) {
-			console.log(linkButtons[i])
 			linkButtons[i].removeEventListener('click', addTab)
+			linkButtons[i].style.border = 'none'
 		}
 		localStorage.setItem("default-tabs", JSON.stringify(defaultTabs))
 	}
@@ -57,7 +60,7 @@ function addTab(e) {
 		this.setAttribute("selected", "false")
 	} else {
 		defaultTabs.push(this.getAttribute("href"))
-		this.style.border = '1px solid red'
+		this.style.border = '1px solid grey'
 		this.setAttribute("selected", "true")
 	}
 	console.log(defaultTabs)
