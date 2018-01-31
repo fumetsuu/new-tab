@@ -101,6 +101,11 @@
 					"name": "OzBargain",
 					"bgColour": "#DF8D47",
 					"link": "https://ozbargain.com.au"
+				},
+				{
+					"name": "anime music",
+					"bgColour": "#f1efea",
+					"link": "https://animemusicmp3.club/"
 				}
 			]
 		}
